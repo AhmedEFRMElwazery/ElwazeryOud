@@ -382,6 +382,37 @@ footer a:hover{
     color: #0d0d;
 }
 
+
+/*******************************************************************************/
+/*******************************************************************************/
+/*******************************************************************************/
+.central-image{
+    /* border:1px solid red; */
+    margin-top: 5vh;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.thank-you-message{
+    /* border:1px solid red; */
+    margin-top: 2vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.thank-you-message p{
+    text-align: center;
+    font-family: 'Lobster';
+    font-size: 1.9rem;
+    margin: 0 1rem;
+    color: #791D23;
+}
+
 @media only screen and (max-width: 1000px){
     button, input{
         font-size: 0.7rem !important;
@@ -445,6 +476,9 @@ footer a:hover{
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-rows: 30% 30% 30%;
+    }
+    .thank-you-message p{
+        font-size: 1.6rem;
     }
     
   }
@@ -513,5 +547,9 @@ footer a:hover{
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-rows: 30% 30% 30%;
+    }
+
+    .thank-you-message p{
+        font-size: 1.3rem;
     }
   }
