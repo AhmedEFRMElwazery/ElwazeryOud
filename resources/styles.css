@@ -296,7 +296,7 @@ fieldset{
     margin-bottom: 1rem;
 }
 
-#personalInfo, #productField, #communication{
+#personalInfo, #productField, #communication, #messageArea{
     width: 80%;
     padding: 1rem;
 }
@@ -349,7 +349,7 @@ textarea{
     margin-bottom: 1rem;
     padding-top: 1rem;
     padding-left: 1rem;
-    width: 70%;
+    width: 90%;
 }
 
 #submit {
