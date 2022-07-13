@@ -61,6 +61,7 @@ body{
 
 h1{
     font-family: 'Great Vibes', cursive;
+    text-align: center;
     font-size: 3rem;
     color: #474140;
 }
@@ -90,20 +91,31 @@ ul li {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    box-shadow:  5px 5px 10px #d5d1c2,
+    -5px -5px 10px #ffffee;
 
 }
 
 ul li:hover{
     background-image: url('https://github.com/AhmedEFRMElwazery/ElwazeryOud/blob/main/resources/image/Background-block-light.PNG?raw=true');
     background-repeat: repeat;
+    box-shadow:  inset 5px 5px 10px #d5d1c2,
+    inset -5px -5px 10px #ffffee;
 }
 
 a{
     text-decoration: none;
     font-family: 'Lobster';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     font-size: 27px;
     font-weight: 800;
     color: #474140;
+    width: 80%;
+    height: 80%;
+    /* border: 1px solid red; */
 }
 
 .gapCreated{
@@ -152,6 +164,14 @@ a{
     font-size: 1.1rem;
     background-image: url('https://github.com/AhmedEFRMElwazery/ElwazeryOud/blob/main/resources/image/palisander.jpg?raw=true');
     cursor: pointer;
+    border:none;
+    box-shadow:   5px 5px 10px #27130f,
+    -5px -5px 10px #9b4d3d;
+}
+
+.call-to-action button:hover {
+    box-shadow:  inset 5px 5px 10px #27130f,
+    inset -5px -5px 10px #9b4d3d;
 }
 
 .hero-img{
@@ -179,11 +199,17 @@ a{
     flex-direction: column;
 }
 
-h3{
+h2{
     margin-top: 35vh;
+    margin-bottom:2rem;
     margin-left: 5rem;
     font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 11%;
     font-family: 'Lobster';
+    box-shadow:  5px 5px 10px #d5d1c2,
+    -5px -5px 10px #ffffee;
+    
 }
 
 .about-us{
@@ -356,17 +382,19 @@ textarea{
     width: 20%;
     padding: 1rem;
     margin: 3rem;
-    background-color: #791D23;
     color: #f0f0f0;
     font-size: 1.1rem;
     border-radius: 50px;
-    border: 1px solid #791D23;
+    background-image: url('https://github.com/AhmedEFRMElwazery/ElwazeryOud/blob/main/resources/image/palisander.jpg?raw=true');
+    cursor: pointer;
+    border:none;
+    box-shadow:   5px 5px 10px #27130f,
+    -5px -5px 10px #9b4d3d;
 }
 
 #submit:hover{
-    background-image: url('https://github.com/AhmedEFRMElwazery/ElwazeryOud/blob/main/resources/image/Background-block-light.PNG?raw=true');
-    color: #791D23;
-    font-weight: bold;
+    box-shadow:  inset 5px 5px 10px #27130f,
+    inset -5px -5px 10px #9b4d3d;
 }
 
 footer{
@@ -378,6 +406,7 @@ footer a{
     text-align: center;
     font-family: Tahoma;
     font-size: 1rem;
+    display: unset;
 }
 
 footer a:hover{
