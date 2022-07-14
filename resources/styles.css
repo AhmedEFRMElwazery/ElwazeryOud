@@ -61,6 +61,35 @@ body{
     animation: dancing 1.5s linear infinite alternate;
 }
 
+#musicIcon{
+    /* position: absolute; */
+    /* left: 50px; */
+    transform: rotate(-45deg);
+    height: 25px;
+    animation: oudMusic 1.5s linear normal infinite;
+}
+
+#musicIcon2{
+    /* position: absolute; */
+    /* left: 50px; */
+    opacity: 0;
+    transform: rotate(45deg);
+    height: 25px;
+    animation: oudMusic 1.5s linear normal infinite;
+    animation-delay: 2s;
+}
+
+@keyframes oudMusic {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: rotate(45deg);
+        transform: translateY(-70px);
+    }
+}
+
 h1{
     font-family: 'Great Vibes', cursive;
     text-align: center;
@@ -186,6 +215,19 @@ a{
 
 .hero-img img{
     height: 100%;
+    opacity: 0;
+    animation: entrance 1s ease-in forwards;
+    animation-delay: 3s;
+}
+
+@keyframes entrance {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .container section{
