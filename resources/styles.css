@@ -59,14 +59,17 @@ body{
     height: 100%;
     transform: rotate(11deg);
     animation: dancing 1.5s linear infinite alternate;
+    animation-delay: 4s;
 }
 
 #musicIcon{
     /* position: absolute; */
     /* left: 50px; */
+    opacity: 0;
     transform: rotate(-45deg);
     height: 25px;
     animation: oudMusic 1.5s linear normal infinite;
+    animation-delay: 4.5s;
 }
 
 #musicIcon2{
@@ -76,18 +79,7 @@ body{
     transform: rotate(45deg);
     height: 25px;
     animation: oudMusic 1.5s linear normal infinite;
-    animation-delay: 2s;
-}
-
-@keyframes oudMusic {
-    0% {
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-        transform: rotate(45deg);
-        transform: translateY(-70px);
-    }
+    animation-delay: 6.5s;
 }
 
 h1{
@@ -218,16 +210,7 @@ a{
     opacity: 0;
     animation: entrance 1s ease-in forwards;
     animation-delay: 3s;
-}
-
-@keyframes entrance {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
+    animation-play-state: paused running paused;
 }
 
 .container section{
@@ -492,12 +475,33 @@ footer a:hover{
 }
 
 @keyframes dancing {
-    from {
+    0% {
         transform: rotate(11deg);
     }
 
-    to {
+    100%{
         transform: rotate(-11deg);
+    }
+}
+
+@keyframes oudMusic {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: rotate(45deg);
+        transform: translateY(-70px);
+    }
+}
+
+@keyframes entrance {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }
 
