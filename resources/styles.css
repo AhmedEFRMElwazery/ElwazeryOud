@@ -58,9 +58,13 @@ body{
 #header-img{
     height: 100%;
     transform: rotate(11deg);
-    animation: dancing 1.5s linear infinite alternate;
-    animation-delay: 4s;
+    
 }
+
+.header-img-dancing-anime{
+    animation: dancing 1.5s linear infinite alternate;  
+}
+
 
 #musicIcon{
     /* position: absolute; */
@@ -68,8 +72,11 @@ body{
     opacity: 0;
     transform: rotate(-45deg);
     height: 25px;
+}
+
+.musicIcon-oudMusic-anime {
     animation: oudMusic 1.5s linear normal infinite;
-    animation-delay: 4.5s;
+    animation-delay: 0.5s;
 }
 
 #musicIcon2{
@@ -78,8 +85,11 @@ body{
     opacity: 0;
     transform: rotate(45deg);
     height: 25px;
+}
+
+.musicIcon2-oudMusic-anime{
     animation: oudMusic 1.5s linear normal infinite;
-    animation-delay: 6.5s;
+    animation-delay: 2.5s;
 }
 
 h1{
@@ -126,6 +136,12 @@ ul li:hover{
     inset -5px -5px 10px #ffffee;
 }
 
+.top-nav a.icon{
+    display: none;
+}
+
+
+
 a{
     text-decoration: none;
     font-family: 'Lobster';
@@ -139,6 +155,23 @@ a{
     width: 80%;
     height: 80%;
     /* border: 1px solid red; */
+}
+
+.icon {
+    margin-top: 7%;
+    width: 15%;
+    /* margin-left: 5%; */
+    height: 50%;
+    /* font-size: 100px; */
+}
+
+.icon i{
+    /* margin-top: 50%; */
+    width: 100%;
+    /* margin-left: 5%; */
+    height: 100%;
+    font-size: 30px;
+
 }
 
 .gapCreated{
@@ -418,6 +451,11 @@ textarea{
     -5px -5px 10px #9b4d3d;
 }
 
+.x-icon-font{
+    font-family: 'Tahoma' !important;
+    font-style: 'normal' !important;
+}
+
 #submit:hover{
     box-shadow:  inset 5px 5px 10px #27130f,
     inset -5px -5px 10px #9b4d3d;
@@ -442,6 +480,8 @@ footer a:hover{
 #musicPlayer{
     display: hidden;
 }
+
+
 
 
 /*******************************************************************************/
@@ -502,6 +542,18 @@ footer a:hover{
 
     100% {
         opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    a{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 1130px){
+    a{
+        font-size: 18px;
     }
 }
 
@@ -603,8 +655,54 @@ footer a:hover{
     
   }
 
+  @media only screen and (max-width: 800px){
+    .top-nav ul, .top-nav ul li {display: none !important;}
+    .top-nav a.icon {
+      float: right;
+      display: block;
+    }
+  }
 
-@media only screen and (max-width: 700px){
+  @media only screen and (max-width: 800px) {
+    .top-nav.responsive {position: relative;}
+    .top-nav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .top-nav.responsive ul {
+      position: absoulte;
+      top: 50% !important;
+      left: 0;
+      float: none;
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 85%;
+      height: 100% !important;
+      z-index: 100;
+      text-align: left !important;
+    }
+    .top-nav.responsive ul li{
+      border-radius: 50%;
+      float: none;
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 85%;
+      height: 20% !important;
+      z-index: 100;
+      text-align: left !important;
+
+    }
+  }
+
+  @media only screen and (max-width: 700px){
+    #nav-bar{
+        width: 95%;
+    }
     #hero-banner{
         width: 100%;
         flex-direction: column-reverse;
@@ -702,3 +800,17 @@ footer a:hover{
         font-size: 1.3rem;
     }
   }
+@media screen and (max-width: 600px){
+    .icon{
+        margin-top:17%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    #nav-bar{
+        width:70%;
+    }
+    .icon{
+        margin-top:17%;
+    }
+}
