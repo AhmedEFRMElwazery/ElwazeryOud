@@ -7,6 +7,7 @@
     <meta name="description" content="Elwazery Ouds was founded by Dr. Essam Elwazery, an academic, #########################">
     <meta name="Author" content="Ahmed E. F. R. Mohammed (A.K.A. Ahmed Elwazery)">
     <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/resources/styles.css">
     <title>Elwazery Ouds | The Best Middle Eastern Oud</title>
@@ -22,13 +23,16 @@
             <h1>Elwazery Ouds</h1>
           </a>
         </div>
-      <nav id="nav-bar">
+      <nav id="nav-bar" class="top-nav">
         <ul>
           <li><a class="nav-link" href="#About">About Us</a></li>
           <li><a class="nav-link" href="#Instruments">Instruments</a></li>
           <li><a class="nav-link" href="#Testimonials">Testimonials</a></li>
-          <li><a class="nav-link" href="#ContactUS">Contact Us</a></li>
+          <li><a class="nav-link" href="#ContactUS">Contact Us</a></li>          
         </ul>
+        <a href="javascript:void(0);" class="icon" onclick="musicIcon()">
+          <i class="fa-solid fa-music"></i>
+        </a>
       </nav>
     </header>
   </div>
@@ -140,10 +144,10 @@
     </section>
   </div>
   <footer>
-    <iframe width="2px" height="2px" id="musicPlayer" src="https://www.youtube.com/embed/BTsG60BtFyQ?&autoplay=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; loop; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <!-- <audio autoplay loop preload="auto"><source src="/resources/audio/ArabianFantasyMusic-EnchantedPalace.mp3" type="audio/mpeg"></audio> -->
+    <!-- <iframe width="2px" height="2px" id="musicPlayer" src="https://www.youtube.com/embed/BTsG60BtFyQ?&autoplay=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; loop; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+    <audio id="audioPlayer" autoplay loop preload="auto"><source src="/resources/audio/ArabianFantasyMusic-EnchantedPalace.mp3" type="audio/mpeg"></audio>
     Powered By <a href="https://github.com/AhmedEFRMElwazery/" target="_blank" rel="noopener noreferrer">ÆŴ</a> - Copyright &copy; 2022 All rights resersevd
   </footer>
-    
+    <script src="./app.js"></script>
 </body>
 </html>
