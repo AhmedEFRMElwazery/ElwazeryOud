@@ -258,6 +258,14 @@ a{
     flex-direction: column;
 }
 
+.about{
+    font-family: 'Great Vibes', cursive;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #474140;
+
+}
+
 h2{
     margin-top: 35vh;
     margin-bottom:2rem;
