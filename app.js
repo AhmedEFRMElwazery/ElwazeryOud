@@ -2,7 +2,6 @@ document.querySelector('.header-img').addEventListener('click', ()=>{
     let toPlayAudio = document.querySelector('#header-img').classList.toggle('header-img-dancing-anime');
     document.querySelector('#musicIcon').classList.toggle('musicIcon-oudMusic-anime');
     document.querySelector('#musicIcon2').classList.toggle('musicIcon2-oudMusic-anime');
-    console.log(toPlayAudio);
     if(toPlayAudio) {
         document.querySelector('#audioPlayer').play();
     } else if (!toPlayAudio){
