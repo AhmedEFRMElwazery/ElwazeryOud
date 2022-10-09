@@ -263,6 +263,7 @@ a{
     font-weight: bold;
     font-size: 2rem;
     color: #474140;
+    text-justify: inter-word;
 }
 
 h2{
@@ -305,9 +306,6 @@ h2{
 .about-img img{
     height: 100%;
     border-radius: 50%;
-    box-shadow:  20px 20px 16px #a1a1a1,
-                -20px -20px 16px #ffffff, inset 20px 20px 16px #a1a1a1,
-            inset -20px -20px 16px #ffffff;
 }
 
 #Instruments{
