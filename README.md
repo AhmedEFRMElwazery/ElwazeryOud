@@ -12,8 +12,8 @@
 
 * **Here is a demo of the website below**
 
-![a demo of Elwazery Ouds overall design](./resources/images/ScreenshotOfElwazeryOudsLandingPage.png "a demo of Elwazery Ouds overall design aesthetics and features")
+![a demo of Elwazery Ouds overall design](./resources/image/ScreenshotOfElwazeryOudsLandingPage.png "a demo of Elwazery Ouds overall design aesthetics and features")
 
 You can check it out on the following link: https://elwazeryouds.netlify.app/
 
-![a demo of Elwazery Ouds overall design](./resources/images/animationAndMusicCanBeActivatedOrPausedByClick.gif "a dancing animation is activated and a background music is played upon clicking the website's logo located in the top-left corner")
+![a demo of Elwazery Ouds overall design](./resources/image/animationAndMusicCanBeActivatedOrPausedByClick.gif "a dancing animation is activated and a background music is played upon clicking the website's logo located in the top-left corner")
