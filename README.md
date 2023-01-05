@@ -2,4 +2,4 @@
 
 This website is dedicated to Dr. Essam Elwazery, an academic with passion for music and musical instruments...
 
-You can check it out on the following link: https://elwazeryouds.netlify.app/
+You can check it out on the following link: https://elwazery.netlify.app/
