@@ -240,10 +240,10 @@ a{
 
 .hero-img img{
     height: 100%;
-    opacity: 0;
+/*     opacity: 0;
     animation: entrance 1s ease-in forwards;
     animation-delay: 3s;
-    animation-play-state: paused running paused;
+    animation-play-state: paused running paused; */
 }
 
 .container section{
